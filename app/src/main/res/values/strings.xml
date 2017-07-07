@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HabitTracker</string>
+
+    <!-- Title for the activity to add a new habit -->
+    <string name="editor_activity_title_new_habit">Add a Habit</string>
+
+    <!-- Label for editor menu option to save habit and leave editor  -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for name of the habit to track in the editor -->
+    <string name="category_name">Habit to Track</string>
+
+    <!-- Text hint for name field in the editor -->
+    <string name="hint_habit_name">Habit name</string>
+
+    <!-- Label for name of the habit to track in the editor -->
+    <string name="category_duration">Duration of the Activity</string>
+
+    <!-- Text hint for duration field in the editor -->
+    <string name="hint_habit_duration">Duration</string>
+
+    <!-- Label for dropdown menu option if the habit's scale  is unknown -->
+    <string name="scale_unknown">Unknown</string>
+
+    <!-- Label for dropdown menu option if the habit's scale is minuts-->
+    <string name="scale_minutes">Minutes</string>
+
+    <!-- Label for dropdown menu option if the habit's scale is hours -->
+    <string name="scale_hours">Hours</string>
+</resources>
