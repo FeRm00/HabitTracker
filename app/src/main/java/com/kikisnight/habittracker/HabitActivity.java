@@ -51,24 +51,8 @@ public class HabitActivity extends AppCompatActivity {
         // Create and/or open a database to read from it
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        // Define a projection that specifies which columns from the database
-        // it will actually use after this query.
-        String[] projection = {
-                HabitEntry._ID,
-                HabitEntry.COLUMN_HABIT_NAME,
-                HabitEntry.COLUMN_HABIT_DURATION,
-                HabitEntry.COLUMN_HABIT_SCALE };
-
-        // Perform a query on the habits table
-        Cursor cursor = db.query(
-                HabitEntry.TABLE_NAME,   // The table to query
-                projection,            // The columns to return
-                null,                  // The columns for the WHERE clause
-                null,                  // The values for the WHERE clause
-                null,                  // Don't group the rows
-                null,                  // Don't filter by row groups
-                null);                   // The sort order
-
+        /** Read the table records and write to log for test */
+        Cursor cursor = mDbHelper.readAllHabits();
         TextView displayView = (TextView) findViewById(R.id.text_view_habit);
 
         try {

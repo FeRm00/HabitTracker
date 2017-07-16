@@ -7,6 +7,9 @@ import android.provider.BaseColumns;
  */
 public final class HabitContract {
 
+    /*
+    * An empty private constructor makes sure that the class is not going to be initialised.
+    */
     private HabitContract() {}
 
     /**
@@ -17,11 +20,6 @@ public final class HabitContract {
 
         /** Name of database table for habits */
         public final static String TABLE_NAME = "habits";
-
-        /**
-         * Unique ID number for the habit
-         */
-        public final static String _ID = BaseColumns._ID;
 
         /**
          * Name of the habit.
