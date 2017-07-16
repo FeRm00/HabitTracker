@@ -73,7 +73,7 @@ public class TrackActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selection = (String) parent.getItemAtPosition(position);
                 if (!TextUtils.isEmpty(selection)) {
-                    if (selection.equals(getString(R.string.scale_minuts))) {
+                    if (selection.equals(getString(R.string.scale_minutes))) {
                         mScale = HabitEntry.SCALE_MINUTS;
                     } else if (selection.equals(getString(R.string.scale_hours))) {
                         mScale = HabitEntry.SCALE_HOURS;

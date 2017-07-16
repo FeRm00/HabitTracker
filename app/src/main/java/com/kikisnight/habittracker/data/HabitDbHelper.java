@@ -42,7 +42,6 @@ public class HabitDbHelper extends SQLiteOpenHelper {
                 + HabitEntry.COLUMN_HABIT_DURATION + " INTEGER NOT NULL DEFAULT 0, "
                 + HabitEntry.COLUMN_HABIT_SCALE + " INTEGER NOT NULL);";
 
-
         // Execute the SQL statement
         db.execSQL(SQL_CREATE_HABITS_TABLE);
     }
